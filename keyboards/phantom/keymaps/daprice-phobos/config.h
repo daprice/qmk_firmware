@@ -37,4 +37,6 @@
     K50,   K51,   K52,   KC_NO,        KC_NO, K57,   KC_NO,               K5A,   K5B,   K5C,   K5D,          K5E,   K5F,   K5G    \
 )
 
+#define RGBLIGHT_EFFECT_KNIGHT_OFFSET 4
+
 #endif
