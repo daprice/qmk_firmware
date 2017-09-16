@@ -18,11 +18,11 @@
 // Helpful defines
 #define _______ KC_TRNS
 
-enum planck_keycodes {
+/*enum planck_keycodes {
 	DYNAMIC_MACRO_RANGE,
 };
 
-#include "dynamic_macro.h"
+#include "dynamic_macro.h"*/
 
 // Each layer gets a name for readability, which is then used in the keymap matrix below.
 // The underscores don't mean anything - you can have a layer called STUFF or any other name.
@@ -42,7 +42,7 @@ enum planck_keycodes {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_NumL] = KEYMAP_PHOBOS(
-        KC_ESC,           KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,       KC_PSCR, DF(_ClusterL), DYN_REC_START1,  \
+        KC_ESC,           KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,       KC_PSCR, DF(_ClusterL), /*DYN_REC_START1*/KC_NO,  \
         KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL,  KC_BSPC,      KC_KP_7,  KC_KP_8, KC_KP_9, \
         KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_LBRC, KC_RBRC, KC_BSLS,      KC_KP_4,  KC_KP_5,  KC_KP_6, \
         KC_CAPS, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,          KC_ENT, KC_KP_1, KC_KP_2, KC_KP_3,                                  \
@@ -67,7 +67,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	// - numpad toggler key acts as num lock
 	// - numpad 9 puts teensy into DFU mode
     [_FL] = KEYMAP_PHOBOS(
-        KC_PWR,          DYN_MACRO_PLAY1, _______, _______, _______,  _______, KC_MRWD, KC_MPLY, KC_MFFD, _______, KC_MUTE, KC_VOLD, KC_VOLU,      _______, KC_NLCK, DYN_REC_STOP, \
+        KC_PWR,          /*DYN_MACRO_PLAY1*/_______, _______, _______, _______,  _______, KC_MRWD, KC_MPLY, KC_MFFD, _______, KC_MUTE, KC_VOLD, KC_VOLU,      _______, KC_NLCK, /*DYN_REC_STOP*/KC_NO, \
         RGB_MOD, RGB_M_P, RGB_M_B, RGB_M_R, RGB_M_SW, RGB_M_SN, RGB_M_K, RGB_M_X, RGB_M_G, _______, _______, _______, _______, KC_DEL,      _______, _______, RESET, \
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,      _______, _______, _______, \
         _______, _______, KC_LEFT, KC_UP, KC_DOWN, KC_RIGHT, KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, _______, _______,          _______,RGB_TOG,RGB_MOD,_______,                                 \
@@ -101,9 +101,9 @@ void matrix_scan_user(void) {
 }
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-	if (!process_record_dynamic_macro(keycode, record)) {
+	/*if (!process_record_dynamic_macro(keycode, record)) {
 		return false;
-	}
+	}*/
 	return true;
 }
 
