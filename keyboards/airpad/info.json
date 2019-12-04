@@ -1,0 +1,30 @@
+{
+  "keyboard_name": "Airpad",
+  "keyboard_folder": "airpad",
+  "manufacturer": "Price Design",
+  "identifier": "FEED:6060:0001",
+  "url": "https://github.com/daprice/ios-macropad",
+  "maintainer": "daprice",
+  "processor": "atmega32u4",
+  "bootloader": "arduino",
+  "width": 3,
+  "height": 4,
+  "layouts": {
+    "LAYOUT_airpad_default": {
+      "key_count": 12,
+      "layout": [ 
+        { "w": 1, "x": 0, "y": 0 }, 
+        { "w": 1, "x": 1, "y": 0 }, 
+        { "w": 1, "x": 2, "y": 0 }, 
+        { "w": 1, "x": 0, "y": 1 }, 
+        { "w": 1, "x": 1, "y": 1 }, 
+        { "w": 1, "x": 2, "y": 1 }, 
+        { "w": 1, "x": 0, "y": 2 }, 
+        { "w": 1, "x": 1, "y": 2 }, 
+        { "w": 1, "x": 2, "y": 2 }, 
+        { "w": 1, "x": 0, "y": 3 }, 
+        { "w": 1, "x": 1, "y": 3 }, 
+        { "w": 1, "x": 2, "y": 3 } ]
+    }
+  }
+}
