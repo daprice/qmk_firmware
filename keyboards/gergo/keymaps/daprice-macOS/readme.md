@@ -11,6 +11,7 @@ Compared to the default Gergo layout, this layout…
 - ditches mouse movement keys based on the assumption that you have a comfortable trackpad right next to or between your Gergo halves
 - ditches F1-F12, which are scarcely used as PC-standard function keys on MacOS, in favor of having vim-style arrow keys on BOTH HALVES
 - uses a vim-inspired layout for media keys, with rewind, vol-, vol+, and fast-forward directly below left, down, up, and right in the function layer, and the space bar used for play/pause in the function layer
+- makes one of the inner 1u keys act as command+NUMBER LAYER so you can use fewer fingers to perform key commands that involve numbers, such as taking screenshots
 
 ## Settings
 To edit various settings, enable the 1u trackball and whatnot please modify /keyboards/gergo/keymaps/default/rules.mk
